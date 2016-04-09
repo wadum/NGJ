@@ -7,8 +7,11 @@ public class SimplerMovement : MonoBehaviour {
     public KeyCode RightThruster;
     public KeyCode ForwardThruster;
 
-    public float ForwardForce;
-    public float RotationForce;
+    public float MaximumVelocity;
+    public float TimeToMaximumVelocity;
+
+    public float TurnForce;
+    public float MaximumTurnSpeed;
 
     private Rigidbody2D _drone;
 
@@ -26,14 +29,29 @@ public class SimplerMovement : MonoBehaviour {
         _forwardThrusterOn = Input.GetKey(ForwardThruster);
     }
 
+    private Vector2 CalculateNextVelocity() {
+        // decompose the velocities from forward and other;
+        var forward = Vector2.Dot(_drone.velocity, _drone.transform.up) * _drone.transform.up;
+        var other = Vector2.Dot(_drone.velocity, _drone.transform.right) * _drone.transform.right;
+
+        var velocity = forward.magnitude + MaximumVelocity * Time.fixedDeltaTime / TimeToMaximumVelocity;
+        if (velocity > MaximumVelocity)
+            velocity = MaximumVelocity;
+
+        return _drone.transform.up*velocity + other;
+    }
+
     private void FixedUpdate() {
         if (_forwardThrusterOn)
-            _drone.AddForce(ForwardForce*_drone.transform.up*Time.fixedDeltaTime, ForceMode2D.Force);
+            _drone.velocity = CalculateNextVelocity();
 
         if (_leftThrusterOn && !_rightThrusterOn)
-            _drone.AddTorque(RotationForce*Time.fixedDeltaTime, ForceMode2D.Force);
+            _drone.AddTorque(TurnForce * Time.fixedDeltaTime, ForceMode2D.Force);
 
         if (_rightThrusterOn && !_leftThrusterOn)
-            _drone.AddTorque(-RotationForce*Time.fixedDeltaTime, ForceMode2D.Force);
+            _drone.AddTorque(-TurnForce * Time.fixedDeltaTime, ForceMode2D.Force);
+
+        if (_drone.angularVelocity > MaximumTurnSpeed)
+            _drone.angularVelocity = MaximumTurnSpeed;
     }
 }
