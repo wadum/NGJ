@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a55d8cf3e917c8d4fa87957afb949432
-timeCreated: 1460208311
+timeCreated: 1460217520
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -59,21 +59,21 @@ TextureImporter:
         y: 100
         width: 140
         height: 279
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.9781794}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 20, y: 139.5}
-        - {x: -20, y: 139.5}
-        - {x: -70, y: 55.5}
-        - {x: -70, y: -88.5}
-        - {x: -56, y: -139.5}
-        - {x: 53, y: -139.5}
-        - {x: 70, y: -118.5}
-        - {x: 70, y: -6.5}
-        - {x: 66, y: 1.5}
-        - {x: 54, y: 22.5}
-        - {x: 27, y: 137.5}
+      - - {x: 20, y: 6.0879517}
+        - {x: -20, y: 6.0879517}
+        - {x: -70, y: -77.91205}
+        - {x: -70, y: -221.91205}
+        - {x: -56, y: -272.91205}
+        - {x: 53, y: -272.91205}
+        - {x: 70, y: -251.91205}
+        - {x: 70, y: -139.91205}
+        - {x: 66, y: -131.91205}
+        - {x: 54, y: -110.91205}
+        - {x: 27, y: 4.0879517}
     - name: chain_0
       rect:
         serializedVersion: 2

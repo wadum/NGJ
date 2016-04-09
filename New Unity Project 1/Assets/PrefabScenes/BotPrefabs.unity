@@ -593,6 +593,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11460018, guid: 5dedfdebf42e42b4da8cad1ccaa4e3d7, type: 2}
+      propertyPath: ForwardThruster
+      value: 273
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5dedfdebf42e42b4da8cad1ccaa4e3d7, type: 2}
   m_IsPrefabParent: 0

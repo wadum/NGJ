@@ -1,70 +1,54 @@
 ﻿using UnityEngine;
-using UnityEngine.Assertions.Comparers;
 
 public class DroneMovement : MonoBehaviour {
 
-    public Rigidbody2D Drone;
-
-    public Thruster LeftThruster;
-    public Thruster RightThruster;
+    public Rigidbody2D Drone, LeftThruster, RightThruster;
 
     public KeyCode LeftBoost;
     public KeyCode RightBoost;
 
     public KeyCode ToggleThrusters;
 
-    public float BaseForce;
-    public float BoostForce;
-    public float HoverForce;
-    public float HoverDistance;
-    public float TimeToMaxBoost;
-    public float TimeToBaseBoost;
+    public float BaseAcceleration;
+    public float BoostAcceleration;
+    public float Drag;
 
-    public float DroneDrag;
-    public float DroneWeight;
-    public float ThrusterDrag;
-    public float ThrusterWeight;
+    private bool _boostingLeft;
+    private bool _boostingRight;
+    private bool _thrustersOn = true;
 
     private void Start () {
-        Drone.drag = DroneDrag;
-        Drone.mass = DroneWeight;
-
-        LeftThruster.SetThrusterDrag(ThrusterDrag);
-        LeftThruster.SetThrusterMass(ThrusterWeight);
-        LeftThruster.SetBaseThrust(BaseForce);
-        LeftThruster.SetBoostThrust(BoostForce);
-        LeftThruster.SetTimeToMaxBoost(TimeToMaxBoost);
-        LeftThruster.SetTimeToBase(TimeToBaseBoost);
-        LeftThruster.SetHoverThrust(HoverForce);
-        LeftThruster.SetHoverDistance(HoverDistance);
-
-        RightThruster.SetThrusterDrag(ThrusterDrag);
-        RightThruster.SetThrusterMass(ThrusterWeight);
-        RightThruster.SetBaseThrust(BaseForce);
-        RightThruster.SetBoostThrust(BoostForce);
-        RightThruster.SetTimeToMaxBoost(TimeToMaxBoost);
-        RightThruster.SetTimeToBase(TimeToBaseBoost);
-        RightThruster.SetHoverThrust(HoverForce);
-        RightThruster.SetHoverDistance(HoverDistance);
-
-        LeftThruster.SetEngine(true);
-        RightThruster.SetEngine(true);
+        Drone.drag = Drag;
+        Drone.mass = 1;
+        LeftThruster.drag = Drag;
+        LeftThruster.mass = 1;
+        RightThruster.drag = Drag;
+        RightThruster.mass = 1;
     }
 
+    // Update is called once per frame
     private void Update () {
-        if (Input.GetKeyDown(LeftBoost))
-            LeftThruster.SetBoost(true);
-        if (Input.GetKeyUp(LeftBoost))
-            LeftThruster.SetBoost(false);
+        _boostingLeft = Input.GetKey(LeftBoost);
+        _boostingRight = Input.GetKey(RightBoost);
 
-        if (Input.GetKeyDown(RightBoost))
-            RightThruster.SetBoost(true);
-        if (Input.GetKeyUp(RightBoost))
-            RightThruster.SetBoost(false);
+        if (Input.GetKeyDown(ToggleThrusters))
+            _thrustersOn = !_thrustersOn;
+    }
 
-        if (Input.GetKeyDown(ToggleThrusters)) {
-            LeftThruster.ToggleEngine();
-            RightThruster.ToggleEngine();
-        }
+    private void FixedUpdate () {
+        if (!_thrustersOn)
+            return;
+
+        var leftForce = _boostingLeft?
+            BoostAcceleration:
+            BaseAcceleration;
+        var rightForce = _boostingRight?
+            BoostAcceleration:
+            BaseAcceleration;
+
+        LeftThruster
+            .AddForce(LeftThruster.transform.up * leftForce * Time.fixedDeltaTime, ForceMode2D.Force);
+        RightThruster
+            .AddForce(RightThruster.transform.up * rightForce * Time.fixedDeltaTime, ForceMode2D.Force);
     }
 }
