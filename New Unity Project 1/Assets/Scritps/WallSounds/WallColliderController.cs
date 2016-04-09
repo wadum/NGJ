@@ -5,21 +5,24 @@ using System.Collections;
 public class WallColliderController : MonoBehaviour {
 
 	public AudioClip[] Sounds;
+	public AudioClip[] Voices;
 
-	private AudioSource _source;
+	public AudioSource SoundSource;
+	public AudioSource VoiceSource;
 
-	void Start()
-	{
-		_source = GetComponent<AudioSource>();
-	}
+	public int ChanceToPlayVoice = 25;
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		Debug.Log("Hit!");
-		if(other.tag == "Player" && !_source.isPlaying)
+		if(other.tag == "Player" && !SoundSource.isPlaying)
 		{
-			_source.clip = Sounds[Random.Range(0,Sounds.Length-1)];
-			_source.Play();
+			SoundSource.PlayOneShot(Sounds[Random.Range(0,Sounds.Length-1)]);
+			if(Random.Range(0,100) > ChanceToPlayVoice)
+			{
+				VoiceSource.clip = Voices[Random.Range(0,Voices.Length-1)];
+				VoiceSource.PlayDelayed(1);
+			}
 		}
 	}
 }
