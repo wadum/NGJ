@@ -1,0 +1,537 @@
+fileFormatVersion: 2
+guid: 471da4d3545f53a4bbe4281f2c03d90c
+timeCreated: 1460204886
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bot_1_body
+    21300002: bot_1_top
+    21300004: bot_1_eyes
+    21300006: bot_1_R_Lower
+    21300008: bot_1_R_Upper
+    21300010: bot_1_R_Mid
+    21300012: bot_1_R_top
+    21300014: bot_1_R_thrust
+    21300016: bot_1_L_Lower
+    21300018: bot_1_L_Upper
+    21300020: bot_1_L_top
+    21300022: bot_1_L_mid
+    21300024: bot_1_L_trust
+    21300026: bot_2_body
+    21300028: bot_2_eyes
+    21300030: bot_2_L_top
+    21300032: bot_2_L_upper
+    21300034: bot_2_L_Lower
+    21300036: bot_2_L_mid
+    21300038: bot_2_L_thrust
+    21300040: bot_2_R_thrust
+    21300042: bot_2_R_mid
+    21300044: bot_2_R_top
+    21300046: bot_2_R_Upper
+    21300048: bot_2_R_Lower
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bot_1_body
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1326
+        width: 875
+        height: 336
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 214, y: 100}
+        - {x: 163, y: 102}
+        - {x: 164, y: 132}
+        - {x: 101, y: 168}
+        - {x: -47, y: 168}
+        - {x: -89, y: 157}
+        - {x: -137, y: 139}
+        - {x: -162, y: 113}
+        - {x: -219, y: 90}
+        - {x: -219, y: 71}
+        - {x: -218, y: 67}
+        - {x: -166, y: 56}
+        - {x: -83, y: 16}
+        - {x: -39, y: 0}
+        - {x: 26, y: 0}
+        - {x: 97, y: 21}
+        - {x: 168, y: 55}
+        - {x: 218, y: 75}
+        - {x: 218, y: 96}
+    - name: bot_1_top
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1718
+        width: 795
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 195.5, y: 36.5}
+        - {x: -198.5, y: 36.5}
+        - {x: -198.5, y: -34.5}
+        - {x: -193.5, y: -36.5}
+        - {x: -154.5, y: -36.5}
+        - {x: -60.5, y: -32.5}
+        - {x: 191.5, y: -18.5}
+        - {x: 199.5, y: -11.5}
+        - {x: 199.5, y: 29.5}
+    - name: bot_1_eyes
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1134
+        width: 405
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -95, y: 27}
+        - {x: -101, y: 23}
+        - {x: -101, y: -20}
+        - {x: -94, y: -30}
+        - {x: -57, y: -30}
+        - {x: -45, y: -13}
+        - {x: -45, y: 13}
+        - {x: -55, y: 27}
+      - - {x: 47, y: 30}
+        - {x: 32, y: 25}
+        - {x: 32, y: -16}
+        - {x: 46, y: -30}
+        - {x: 98, y: -30}
+        - {x: 102, y: -17}
+        - {x: 102, y: 24}
+        - {x: 96, y: 30}
+    - name: bot_1_R_Lower
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 904
+        width: 61
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bot_1_R_Upper
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 909
+        width: 50
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bot_1_R_Mid
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 772
+        width: 71
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.5, y: 11}
+        - {x: 12.5, y: 17}
+        - {x: -15.5, y: 17}
+        - {x: -17.5, y: 11}
+        - {x: -17.5, y: -12}
+        - {x: -11.5, y: -17}
+        - {x: 9.5, y: -17}
+        - {x: 13.5, y: -15}
+        - {x: 17.5, y: -11}
+        - {x: 18.5, y: -8}
+    - name: bot_1_R_top
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 765
+        width: 117
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 22.5}
+        - {x: -29, y: 10.5}
+        - {x: -29, y: -15.5}
+        - {x: -21, y: -21.5}
+        - {x: 23, y: -21.5}
+        - {x: 30, y: -14.5}
+        - {x: 30, y: 12.5}
+        - {x: 26, y: 22.5}
+    - name: bot_1_R_thrust
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 598
+        width: 146
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 36.5, y: 23}
+        - {x: 25.5, y: 34}
+        - {x: -22.5, y: 34}
+        - {x: -36.5, y: 19}
+        - {x: -36.5, y: -9}
+        - {x: -30.5, y: -31}
+        - {x: -28.5, y: -34}
+        - {x: -14.5, y: -34}
+        - {x: -11.5, y: -33}
+        - {x: -5.5, y: -34}
+        - {x: 36.5, y: -34}
+    - name: bot_1_L_Lower
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 898
+        width: 51
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bot_1_L_Upper
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 893
+        width: 56
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bot_1_L_top
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 752
+        width: 115
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 21.5}
+        - {x: -29, y: -15.5}
+        - {x: -27, y: -21.5}
+        - {x: 19, y: -21.5}
+        - {x: 29, y: -14.5}
+        - {x: 29, y: 13.5}
+        - {x: 24, y: 21.5}
+    - name: bot_1_L_mid
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 760
+        width: 72
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10, y: 17}
+        - {x: -18, y: 10}
+        - {x: -18, y: -16}
+        - {x: -16, y: -17}
+        - {x: 17, y: -17}
+        - {x: 19, y: -12}
+        - {x: 19, y: 13}
+        - {x: 13, y: 17}
+    - name: bot_1_L_trust
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 585
+        width: 147
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: -23.5}
+        - {x: 37, y: 20.5}
+        - {x: 27, y: 34.5}
+        - {x: -22, y: 34.5}
+        - {x: -37, y: 20.5}
+        - {x: -37, y: -33.5}
+        - {x: -21, y: -33.5}
+        - {x: -20, y: -31.5}
+        - {x: -8, y: -33.5}
+        - {x: 31, y: -33.5}
+    - name: bot_2_body
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 1106
+        width: 809
+        height: 542
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 190, y: 78.5}
+        - {x: 198, y: 81.5}
+        - {x: 203, y: 88.5}
+        - {x: 203, y: 126.5}
+        - {x: 200, y: 131.5}
+        - {x: 193, y: 135.5}
+        - {x: -193, y: 135.5}
+        - {x: -202, y: 125.5}
+        - {x: -202, y: 91.5}
+        - {x: -198, y: 85.5}
+        - {x: -189, y: 80.5}
+        - {x: -161, y: 80.5}
+        - {x: -153, y: 65.5}
+        - {x: -74, y: -71.5}
+        - {x: -51, y: -103.5}
+        - {x: -21, y: -131.5}
+        - {x: -13, y: -135.5}
+        - {x: 15, y: -135.5}
+        - {x: 21, y: -134.5}
+        - {x: 60, y: -90.5}
+        - {x: 142, y: 43.5}
+        - {x: 163, y: 79.5}
+    - name: bot_2_eyes
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 1780
+        width: 378
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -83.5, y: 30}
+        - {x: -94.5, y: 16}
+        - {x: -94.5, y: -30}
+        - {x: -30.5, y: -30}
+        - {x: -21.5, y: -13}
+        - {x: -21.5, y: 25}
+        - {x: -28.5, y: 30}
+      - - {x: 42.5, y: 27}
+        - {x: 36.5, y: 16}
+        - {x: 36.5, y: -28}
+        - {x: 45.5, y: -30}
+        - {x: 95.5, y: -30}
+        - {x: 95.5, y: 22}
+        - {x: 83.5, y: 27}
+    - name: bot_2_L_top
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 827
+        width: 121
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16.5, y: 23}
+        - {x: -16.5, y: 23}
+        - {x: -26.5, y: 20}
+        - {x: -30.5, y: 15}
+        - {x: -30.5, y: -10}
+        - {x: -25.5, y: -22}
+        - {x: 23.5, y: -22}
+        - {x: 29.5, y: -9}
+        - {x: 29.5, y: 15}
+    - name: bot_2_L_upper
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 818
+        width: 61
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bot_2_L_Lower
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 814
+        width: 57
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bot_2_L_mid
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 842
+        width: 73
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12.5, y: 17}
+        - {x: -18.5, y: 12}
+        - {x: -18.5, y: -12}
+        - {x: -16.5, y: -17}
+        - {x: 18.5, y: -17}
+        - {x: 18.5, y: 13}
+        - {x: 13.5, y: 17}
+    - name: bot_2_L_thrust
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 806
+        width: 148
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -23, y: 34}
+        - {x: -37, y: 22}
+        - {x: -37, y: -34}
+        - {x: 37, y: -34}
+        - {x: 37, y: 19}
+        - {x: 30, y: 34}
+    - name: bot_2_R_thrust
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 617
+        width: 145
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21.5, y: 34.5}
+        - {x: -36.5, y: 18.5}
+        - {x: -36.5, y: -33.5}
+        - {x: 29.5, y: -33.5}
+        - {x: 36.5, y: -31.5}
+        - {x: 36.5, y: 20.5}
+        - {x: 26.5, y: 34.5}
+    - name: bot_2_R_mid
+      rect:
+        serializedVersion: 2
+        x: 1653
+        y: 643
+        width: 71
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 18}
+        - {x: -17.5, y: 10}
+        - {x: -17.5, y: -8}
+        - {x: -11.5, y: -17}
+        - {x: 10.5, y: -17}
+        - {x: 18.5, y: -12}
+        - {x: 18.5, y: 10}
+        - {x: 10.5, y: 18}
+    - name: bot_2_R_top
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 629
+        width: 118
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18.5, y: 23.5}
+        - {x: -24.5, y: 23.5}
+        - {x: -29.5, y: 20.5}
+        - {x: -29.5, y: -17.5}
+        - {x: -28.5, y: -22.5}
+        - {x: 23.5, y: -22.5}
+        - {x: 30.5, y: -11.5}
+        - {x: 30.5, y: 18.5}
+        - {x: 27.5, y: 22.5}
+    - name: bot_2_R_Upper
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 608
+        width: 53
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: bot_2_R_Lower
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 607
+        width: 57
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
