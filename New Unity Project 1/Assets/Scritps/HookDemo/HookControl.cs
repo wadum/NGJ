@@ -3,35 +3,30 @@ using System.Collections;
 
 public class HookControl : MonoBehaviour {
 
-    public GameObject Drone;
-    public float MaxHookDistance;
+    public RopeController Rope;
 
-    private bool _AddLength;
-    private bool _DecreaseLength;
+    private HingeJoint2D _hook;
 
-    private SpringJoint2D _hook;
-    // Use this for initialization
-    void Start () {
-        _hook = this.gameObject.GetComponent<SpringJoint2D>();
-    }
-	
-	// Update is called once per frame
-	void Update () {
-        _AddLength = Input.GetKey(KeyCode.S);
-        _DecreaseLength = Input.GetKey(KeyCode.W);
+    private bool _FreeHook = true;
+
+    void start()
+    {
+        _hook = this.GetComponent<HingeJoint2D>();
     }
 
     void FixedUpdate()
     {
-        if (_AddLength && _hook.distance < MaxHookDistance)
-            _hook.distance = _hook.distance + 0.05f;
-        if (_DecreaseLength && _hook.distance > 0.2f)
-            _hook.distance = _hook.distance - 0.05f;
-        if(this.gameObject.transform.position.y > _hook.connectedBody.transform.position.y)
-        {
-            this.transform.position = new Vector3(this.transform.position.x, _hook.connectedBody.transform.position.y);
-            
 
+       // this.transform.position = Rope.RopeLinks[Rope.RopeDistance].transform.position;
+       //_hook.connectedBody = Rope.RopeLinks[Rope.RopeDistance-].gameObject.GetComponent<Rigidbody2D>();
+
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "HookableObject" && _FreeHook)
+        {
+            other.transform.parent = this.transform;
         }
     }
 }
