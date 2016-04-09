@@ -29,7 +29,9 @@ public class SimplerMovement : MonoBehaviour {
             return;
         }
 
-        _drone.AddForce(ForwardForce*_drone.transform.up*Time.fixedDeltaTime, ForceMode2D.Force);
+        var force = _leftThrusterOn && _rightThrusterOn ? ForwardForce : 0.75f*ForwardForce;
+
+        _drone.AddForce(force*_drone.transform.up*Time.fixedDeltaTime, ForceMode2D.Force);
 
         if (_leftThrusterOn && !_rightThrusterOn)
             _drone.AddTorque(RotationForce*Time.fixedDeltaTime, ForceMode2D.Force);
