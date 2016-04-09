@@ -102,8 +102,6 @@ public class Thruster : MonoBehaviour {
 
         var ratio = 1 - hit.distance / _hoverDistance;
 
-        Debug.Log(hit.transform.name);
-
         return Mathf.Sqrt(ratio)*_hoverThrust;
     }
 
@@ -114,7 +112,6 @@ public class Thruster : MonoBehaviour {
         BoostStep();
 
         var force = CalculateBaseThrust() + CalculateBoostThrust() + CalculateHoverThrust();
-        Debug.Log(force);
         _thruster.AddForce(transform.up * force * Time.fixedDeltaTime, ForceMode2D.Force);
     }
 }
