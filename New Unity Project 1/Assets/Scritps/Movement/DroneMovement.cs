@@ -4,14 +4,20 @@ public class DroneMovement : MonoBehaviour {
 
     public Rigidbody2D Drone, LeftThruster, RightThruster;
 
-    public float Acceleration = 2f;
-    public float Drag = 0.2f;
-    public float AngularDrag = 50;
+    public KeyCode LeftBoost;
+    public KeyCode RightBoost;
 
-    private bool _thrustingLeft;
-    private bool _thrustingRight;
+    public KeyCode ToggleThrusters;
 
-    void Start () {
+    public float BaseAcceleration;
+    public float BoostAcceleration;
+    public float Drag;
+
+    private bool _boostingLeft;
+    private bool _boostingRight;
+    private bool _thrustersOn = true;
+
+    private void Start () {
         Drone.drag = Drag;
         Drone.mass = 1;
         LeftThruster.drag = Drag;
@@ -21,15 +27,28 @@ public class DroneMovement : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
-        _thrustingLeft = Input.GetKey(KeyCode.A);
-        _thrustingRight = Input.GetKey(KeyCode.D);
+    private void Update () {
+        _boostingLeft = Input.GetKey(LeftBoost);
+        _boostingRight = Input.GetKey(RightBoost);
+
+        if (Input.GetKeyDown(ToggleThrusters))
+            _thrustersOn = !_thrustersOn;
     }
 
-    void FixedUpdate () {
-        if (_thrustingLeft)
-            LeftThruster.AddForce(LeftThruster.transform.up * Acceleration, ForceMode2D.Force);
-        if (_thrustingRight)
-            RightThruster.AddForce(RightThruster.transform.up * Acceleration, ForceMode2D.Force);
+    private void FixedUpdate () {
+        if (!_thrustersOn)
+            return;
+
+        var leftForce = _boostingLeft?
+            BoostAcceleration:
+            BaseAcceleration;
+        var rightForce = _boostingRight?
+            BoostAcceleration:
+            BaseAcceleration;
+
+        LeftThruster
+            .AddForce(LeftThruster.transform.up * leftForce * Time.fixedDeltaTime, ForceMode2D.Force);
+        RightThruster
+            .AddForce(RightThruster.transform.up * rightForce * Time.fixedDeltaTime, ForceMode2D.Force);
     }
 }
