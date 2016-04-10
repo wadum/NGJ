@@ -7669,6 +7669,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11431614, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
+      propertyPath: ObjectsToEnable.Array.data[0]
+      value: 
+      objectReference: {fileID: 1271350646}
+    - target: {fileID: 11431614, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
+      propertyPath: ObjectsToEnable.Array.data[1]
+      value: 
+      objectReference: {fileID: 2067447317}
+    - target: {fileID: 11431614, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
+      propertyPath: ObjectsToEnable.Array.data[2]
+      value: 
+      objectReference: {fileID: 195638599}
+    - target: {fileID: 11431614, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
+      propertyPath: ObjectsToDisable.Array.data[0]
+      value: 
+      objectReference: {fileID: 1550705271}
+    - target: {fileID: 11410638, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
+      propertyPath: obj
+      value: 
+      objectReference: {fileID: 1580792113}
     - target: {fileID: 11441978, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
       propertyPath: Drone
       value: 
@@ -7677,22 +7697,6 @@ Prefab:
       propertyPath: Drone2
       value: 
       objectReference: {fileID: 383905937}
-    - target: {fileID: 11410638, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
-      propertyPath: obj
-      value: 
-      objectReference: {fileID: 1580792113}
-    - target: {fileID: 9541022, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11410638, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2033690, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
-      propertyPath: m_OcclusionCulling
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
   m_IsPrefabParent: 0
@@ -13026,11 +13030,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1111696404}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!95 &1139210328 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9541022, guid: 5f5503c1741ac7740b7960b69523f9a6,
-    type: 2}
-  m_PrefabInternal: {fileID: 534577746}
 --- !u!20 &1139210333 stripped
 Camera:
   m_PrefabParentObject: {fileID: 2033690, guid: 5f5503c1741ac7740b7960b69523f9a6,
@@ -13821,6 +13820,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CenterObject: {fileID: 1916202935}
   sprite: {fileID: 2075130265}
+  leak1: {fileID: 0}
+  leak2: {fileID: 0}
 --- !u!114 &1271350650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16447,7 +16448,6 @@ GameObject:
   - 114: {fileID: 1580792115}
   - 114: {fileID: 1580792114}
   - 95: {fileID: 1580792118}
-  - 114: {fileID: 1580792119}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -16548,24 +16548,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &1580792119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1580792113}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0294fd0ed2606415daf579b0a56fead2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectsToEnable:
-  - {fileID: 1271350646}
-  - {fileID: 2067447317}
-  - {fileID: 195638599}
-  ObjectsToDisable:
-  - {fileID: 1550705271}
-  animator: {fileID: 1139210328}
 --- !u!1 &1593426713
 GameObject:
   m_ObjectHideFlags: 0
