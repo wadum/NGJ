@@ -11,10 +11,9 @@ public class AnimationScript : MonoBehaviour {
 
 		anim = obj.GetComponent<Animator>();
 		anim2 = gameObject.GetComponent<Animator>();
+		anim2.speed = 1.7f;
 		anim2.SetTrigger("start");
 		anim.SetTrigger("Start"); 
-
-
 	}
 	
 	// Update is called once per frame
