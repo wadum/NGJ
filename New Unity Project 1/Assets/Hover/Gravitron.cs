@@ -8,6 +8,8 @@ public class Gravitron : MonoBehaviour {
     public Rigidbody2D Target;
     public SpriteRenderer Effect;
 
+	public AudioSource MagnetSound;
+
     /*
     private void Update() {
         if (!Effect)
@@ -43,8 +45,16 @@ public class Gravitron : MonoBehaviour {
 
     private void FixedUpdate() {
         var dist = Vector2.Distance(Target.worldCenterOfMass, transform.position);
-        if (dist > Radius)
+		if (dist > Radius)
+		{
+			if(MagnetSound && MagnetSound.isPlaying) MagnetSound.Stop();
             return;
+		}
+
+		if(MagnetSound){
+			if(!MagnetSound.isPlaying) MagnetSound.Play();
+			MagnetSound.volume = Ratio(dist);
+		}
 
         var force = GravityCurve.Evaluate(Ratio(dist))*MaximalPull*Time.fixedDeltaTime;
         var dir = (Vector2)transform.position - Target.worldCenterOfMass;
