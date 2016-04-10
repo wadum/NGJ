@@ -5402,6 +5402,10 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1068754506}
   m_RootOrder: 8
+--- !u!1 &422235085 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 194740, guid: 25a649a320800d845bf865489aa28c7a, type: 2}
+  m_PrefabInternal: {fileID: 383905936}
 --- !u!1 &425737495
 GameObject:
   m_ObjectHideFlags: 0
@@ -6445,10 +6449,6 @@ SpriteRenderer:
   m_Color: {r: 0, g: 0, b: 0, a: 0.828}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &517276194 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 116538, guid: 3b098e8aedbf2c34f902739a82e2173b, type: 2}
-  m_PrefabInternal: {fileID: 308213124}
 --- !u!1 &525216274
 GameObject:
   m_ObjectHideFlags: 0
@@ -6645,11 +6645,15 @@ Prefab:
     - target: {fileID: 11441978, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
       propertyPath: Drone
       value: 
-      objectReference: {fileID: 517276194}
+      objectReference: {fileID: 1400688617}
     - target: {fileID: 11441978, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
       propertyPath: Drone2
       value: 
-      objectReference: {fileID: 971896047}
+      objectReference: {fileID: 422235085}
+    - target: {fileID: 11441978, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
+      propertyPath: MinDistanceFromDrone
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
   m_IsPrefabParent: 0
@@ -9943,10 +9947,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &971896047 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 198088, guid: 25a649a320800d845bf865489aa28c7a, type: 2}
-  m_PrefabInternal: {fileID: 383905936}
 --- !u!1 &972690874
 GameObject:
   m_ObjectHideFlags: 0
@@ -12162,6 +12162,10 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1400574346}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1400688617 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 166634, guid: 3b098e8aedbf2c34f902739a82e2173b, type: 2}
+  m_PrefabInternal: {fileID: 308213124}
 --- !u!1 &1402933840
 GameObject:
   m_ObjectHideFlags: 0
