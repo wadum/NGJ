@@ -54,7 +54,7 @@ public class WallColliderController : MonoBehaviour {
 
                 if (other.gameObject.GetComponent<ReactorState>().ReactorDmg >= other.gameObject.GetComponent<ReactorState>().ReactorMaxHealth)
             {
-                Destroy(other.gameObject.transform.parent.parent.gameObject);
+                other.gameObject.transform.parent.gameObject.SetActive(false);
                 SoundFiles.StopAllAudio();
                 SoundFiles.PlayExsplosion2();
             }
@@ -65,6 +65,12 @@ public class WallColliderController : MonoBehaviour {
     IEnumerator WaitForReactorToBeAbleToHitAgain()
     {
         yield return new WaitForSeconds(1);
+        yield return null;
+    }
+
+    IEnumerator DieAndResetLevel()
+    {
+
         yield return null;
     }
 }
