@@ -5029,7 +5029,9 @@ Prefab:
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[42].x
       value: 6.575925
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8218164, guid: d0751a0abddc5434ba82a423b30f08b3, type: 2}
+    - {fileID: 8282752, guid: d0751a0abddc5434ba82a423b30f08b3, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d0751a0abddc5434ba82a423b30f08b3, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &273976694
@@ -11325,6 +11327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CenterObject: {fileID: 1916202935}
+  sprite: {fileID: 2075130265}
 --- !u!114 &1271350650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16562,6 +16565,11 @@ SpriteRenderer:
   m_Color: {r: 0.99264705, g: 0.47236305, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!212 &2075130265 stripped
+SpriteRenderer:
+  m_PrefabParentObject: {fileID: 21263718, guid: d87d3aefab495be4f806375ca6732df7,
+    type: 2}
+  m_PrefabInternal: {fileID: 868623532}
 --- !u!1 &2098084824
 GameObject:
   m_ObjectHideFlags: 0
