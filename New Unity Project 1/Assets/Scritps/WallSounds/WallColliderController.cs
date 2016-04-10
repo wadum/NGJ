@@ -65,7 +65,9 @@ public class WallColliderController : MonoBehaviour {
     IEnumerator DieAndResetLevel()
     {
         DeathAnimation.SetBool("Death", true);
-        Application.LoadLevel(Application.loadedLevel);
+        yield return new WaitForSeconds(10);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("CobotsGrab");
+        //Application.LoadLevel(Application.loadedLevel);
         yield return null;
     }
 }

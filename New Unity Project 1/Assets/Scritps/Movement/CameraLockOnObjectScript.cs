@@ -20,7 +20,7 @@ public class CameraLockOnObjectScript : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.R))
         {
-            Application.LoadLevel(Application.loadedLevel);
+            UnityEngine.SceneManagement.SceneManager.LoadScene("CobotsGrab");
         }
     }
 }
