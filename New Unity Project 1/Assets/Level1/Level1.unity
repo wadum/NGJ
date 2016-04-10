@@ -5991,6 +5991,18 @@ Prefab:
       propertyPath: MagnetSound
       value: 
       objectReference: {fileID: 1709830772}
+    - target: {fileID: 8279348, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8268498, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
+      propertyPath: m_Pitch
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279348, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
   m_IsPrefabParent: 0
@@ -6565,6 +6577,14 @@ Prefab:
       value: 
       objectReference: {fileID: 24360824, guid: 01c1c7a99ceb1374e919828c9706b8e1,
         type: 2}
+    - target: {fileID: 8291998, guid: 09b0601bf762b45d1a3e3cdda4807dc7, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200778, guid: 09b0601bf762b45d1a3e3cdda4807dc7, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09b0601bf762b45d1a3e3cdda4807dc7, type: 2}
   m_IsPrefabParent: 0
@@ -23381,6 +23401,22 @@ Prefab:
       propertyPath: MagnetSound
       value: 
       objectReference: {fileID: 749423174}
+    - target: {fileID: 8291236, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291236, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211174, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211174, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
+      propertyPath: BypassReverbZones
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
   m_IsPrefabParent: 0
