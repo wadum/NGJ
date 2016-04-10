@@ -59,6 +59,7 @@ public class WallColliderController : MonoBehaviour {
     IEnumerator DieAndResetLevel()
     {
         //DeathAnimation.SetBool("Death", true);
+        yield return new WaitForSeconds(10);
         Application.LoadLevel(Application.loadedLevel);
         yield return null;
     }
