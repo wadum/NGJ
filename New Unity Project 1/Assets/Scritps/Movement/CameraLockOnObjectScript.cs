@@ -17,5 +17,10 @@ public class CameraLockOnObjectScript : MonoBehaviour {
 
 	void Update () {
         this.transform.position = Drone.transform.position - (Drone.transform.position - Drone2.transform.position)/2 + new Vector3(0, 0, -MinDistanceFromDrone);
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
     }
 }
