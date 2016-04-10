@@ -5,9 +5,15 @@ public class WallColliderController : MonoBehaviour {
 
     public SoundFilesController SoundFiles;
 
-    public Animator DeathAnimation;
+	public GameObject Canvas;
+
+    private Animator DeathAnimation;
 
 	private bool _isTriggered = false; 
+
+	void Start(){
+		DeathAnimation = Canvas.GetComponent<Animator>();
+	}
 
 	void OnTriggerExit2D (Collider2D other)
 	{
@@ -58,8 +64,7 @@ public class WallColliderController : MonoBehaviour {
 
     IEnumerator DieAndResetLevel()
     {
-        //DeathAnimation.SetBool("Death", true);
-        yield return new WaitForSeconds(10);
+        DeathAnimation.SetBool("Death", true);
         Application.LoadLevel(Application.loadedLevel);
         yield return null;
     }
