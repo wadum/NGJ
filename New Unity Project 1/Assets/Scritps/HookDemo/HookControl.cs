@@ -3,6 +3,8 @@ using System.Collections;
 
 public class HookControl : MonoBehaviour {
 
+
+    public SoundFilesController SoundFiles;
     //Works
     /*void OnTriggerEnter2D(Collider2D other)
     {
@@ -17,6 +19,15 @@ public class HookControl : MonoBehaviour {
         {
             other.GetComponent<HingeJoint2D>().connectedBody = this.transform.parent.gameObject.GetComponent<Rigidbody2D>();
             other.GetComponent<HingeJoint2D>().enabled = true;
+            if(this.gameObject.transform.root.name == "HappyBot")
+            {
+                SoundFiles.PlayMagnet_Happy();
+            }
+
+            if (this.gameObject.transform.root.name == "AngryBot")
+            {
+                SoundFiles.PlayMagnet_Angry();
+            }
         }
     }
 }

@@ -5,11 +5,13 @@ public class CameraLockOnObjectScript : MonoBehaviour {
 
 
     public GameObject Drone;
-    public float DistanceFromDrone;
+    public GameObject Drone2;
+    public float MinDistanceFromDrone;
 	// Use this for initialization
 	
 	// Update is called once per frame
+
 	void Update () {
-        this.transform.position = Drone.transform.position + new Vector3(0, 0, -DistanceFromDrone);
+        this.transform.position = Drone.transform.position + new Vector3(0, 0, -MinDistanceFromDrone);
     }
 }
