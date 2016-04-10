@@ -109,31 +109,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0530f52acca360d44a8ea521d4b49229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PullCurve:
+  GravityCurve:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 0.9936718
+      value: 0.00000011920929
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-    - time: 0.20217013
-      value: 1.0062499
-      inSlope: 0.0000001825029
-      outSlope: 0.0000001825029
+    - time: 0.701362
+      value: 0.99765426
+      inSlope: 0.017133083
+      outSlope: 0.017133083
       tangentMode: 0
-    - time: 0.9791667
-      value: 0.00000011920929
+    - time: 1
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
-  MaximalPull: -2000
+  MaximalPull: -3000
   Radius: 2.2
-  _bodies:
-  - {fileID: 0}
+  Target: {fileID: 0}
+  Effect: {fileID: 0}
 --- !u!114 &11459640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -164,21 +164,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0530f52acca360d44a8ea521d4b49229, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PullCurve:
+  GravityCurve:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 0
+      value: 0.00000011920929
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-    - time: 0.7080729
-      value: 0.99999994
-      inSlope: 0.0000001825029
-      outSlope: 0.0000001825029
+    - time: 0.7005346
+      value: 0.9978175
+      inSlope: -0.023650937
+      outSlope: -0.023650937
       tangentMode: 0
-    - time: 0.9791667
-      value: 0.00000011920929
+    - time: 1.0002918
+      value: -0.018749915
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -187,8 +187,8 @@ MonoBehaviour:
     m_RotationOrder: 0
   MaximalPull: 300
   Radius: 4
-  _bodies:
-  - {fileID: 0}
+  Target: {fileID: 0}
+  Effect: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
