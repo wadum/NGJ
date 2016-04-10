@@ -39,7 +39,6 @@ public class WallColliderController : MonoBehaviour {
         if(other.tag == "Reactor")
         {
             other.gameObject.GetComponent<ReactorState>().ReactorDmg +=1;
-            Debug.Log(other.transform.parent.parent.name + " DMG " + other.gameObject.GetComponent<ReactorState>().ReactorDmg);
 
             if(other.gameObject.GetComponent<ReactorState>().ReactorDmg == 4)
             {
