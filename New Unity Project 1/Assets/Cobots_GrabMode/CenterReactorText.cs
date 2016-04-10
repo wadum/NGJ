@@ -19,7 +19,6 @@ public class CenterReactorText : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		Debug.Log(CenterObject.transform.position);
 		text.text = (reactor.ReactorMaxHealth - reactor.ReactorDmg).ToString();
 		rect.position = Camera.main.WorldToScreenPoint(CenterObject.transform.position);
 		rect.rotation = CenterObject.transform.rotation;
