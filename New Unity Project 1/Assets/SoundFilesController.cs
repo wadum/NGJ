@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SoundFilesController : MonoBehaviour {
 
-    public AudioSource Exsplosion, Exsplosion2, Music_Layer, Music_MainFast, Music_MainFastLayer, Music_MainTheme, Magnet_Happy, Magnet_Angry;
+    public AudioSource Exsplosion, Exsplosion2, Music_Layer, Music_MainFast, Music_MainFastLayer, Music_MainTheme, Magnet_Happy, Magnet_Angry, A_Talk_1, A_Talk_2, A_Talk_3, H_Talk_1, H_Talk_2, H_Talk_3;
     // Use this for initialization
 
     private AudioSource[] allAudioSources;
@@ -40,7 +40,60 @@ public class SoundFilesController : MonoBehaviour {
         NAME.Stop();
     }
     */
+    public void PlayA_Talk_1()
+    {
+        A_Talk_1.Play();
+    }
 
+    public void StopA_Talk_1()
+    {
+        A_Talk_1.Stop();
+    }
+    public void PlayA_Talk_2()
+    {
+        A_Talk_2.Play();
+    }
+
+    public void StopA_Talk_2()
+    {
+        A_Talk_2.Stop();
+    }
+    public void PlayA_Talk_3()
+    {
+        A_Talk_3.Play();
+    }
+
+    public void StopA_Talk_3()
+    {
+        A_Talk_3.Stop();
+    }
+    public void PlayH_Talk_1()
+    {
+        H_Talk_1.Play();
+    }
+
+    public void StopH_Talk_1()
+    {
+        H_Talk_1.Stop();
+    }
+    public void PlayH_Talk_2()
+    {
+        H_Talk_2.Play();
+    }
+
+    public void StopH_Talk_2()
+    {
+        H_Talk_2.Stop();
+    }
+    public void PlayH_Talk_3()
+    {
+        H_Talk_3.Play();
+    }
+
+    public void StopH_Talk_3()
+    {
+        H_Talk_3.Stop();
+    }
     public void PlayMagnet_Angry()
     {
         Magnet_Angry.Play();

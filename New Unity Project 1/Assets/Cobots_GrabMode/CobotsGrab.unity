@@ -5688,6 +5688,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 25a649a320800d845bf865489aa28c7a, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &383905937 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 174466, guid: 25a649a320800d845bf865489aa28c7a, type: 2}
+  m_PrefabInternal: {fileID: 383905936}
 --- !u!1 &383995955
 GameObject:
   m_ObjectHideFlags: 0
@@ -6989,11 +6993,7 @@ Prefab:
     - target: {fileID: 11441978, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
       propertyPath: Drone2
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11441978, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
-      propertyPath: MinDistanceFromDrone
-      value: 4
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 383905937}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5f5503c1741ac7740b7960b69523f9a6, type: 2}
   m_IsPrefabParent: 0
