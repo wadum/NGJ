@@ -6253,6 +6253,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 21252774, guid: 25a649a320800d845bf865489aa28c7a, type: 2}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 25a649a320800d845bf865489aa28c7a, type: 2}
   m_IsPrefabParent: 0
@@ -10654,7 +10658,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300002, guid: a55d8cf3e917c8d4fa87957afb949432, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13908,8 +13912,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CenterObject: {fileID: 1916202935}
   sprite: {fileID: 2075130265}
-  leak1: {fileID: 0}
-  leak2: {fileID: 0}
 --- !u!114 &1271350650
 MonoBehaviour:
   m_ObjectHideFlags: 0
