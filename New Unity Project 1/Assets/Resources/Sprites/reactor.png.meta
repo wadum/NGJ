@@ -1,9 +1,11 @@
 fileFormatVersion: 2
 guid: e0d0cea533726cf48b015fcb926707e1
-timeCreated: 1460222095
+timeCreated: 1460241297
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: reactor_0
+    21300002: reactor_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,7 +51,72 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: reactor_0
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 16
+        width: 439
+        height: 552
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 104.5, y: 56}
+        - {x: 105.5, y: 66}
+        - {x: 105.5, y: 124}
+        - {x: 78.5, y: 124}
+        - {x: 65.5, y: 117}
+        - {x: -55.5, y: 116}
+        - {x: -66.5, y: 124}
+        - {x: -98.5, y: 124}
+        - {x: -100.5, y: 120}
+        - {x: -101.5, y: 113}
+        - {x: -101.5, y: 55}
+        - {x: -82.5, y: 48}
+        - {x: -83.5, y: -78}
+        - {x: -101.5, y: -78}
+        - {x: -101.5, y: -117}
+        - {x: -96.5, y: -135}
+        - {x: 79.5, y: -135}
+        - {x: 102.5, y: -119}
+        - {x: 99.5, y: -78}
+        - {x: 74.5, y: -9}
+    - name: reactor_1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 506
+        width: 597
+        height: 516
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69.5, y: 8}
+        - {x: 123.5, y: 2}
+        - {x: 147.5, y: 31}
+        - {x: 147.5, y: 104}
+        - {x: 142.5, y: 111}
+        - {x: 130.5, y: 111}
+        - {x: -6.5, y: 125}
+        - {x: -37.5, y: 125}
+        - {x: -53.5, y: 124}
+        - {x: -86.5, y: 92}
+        - {x: -128.5, y: 109}
+        - {x: -142.5, y: 98}
+        - {x: -142.5, y: 36}
+        - {x: -137.5, y: 8}
+        - {x: -76.5, y: -1}
+        - {x: -142.5, y: 6}
+        - {x: -142.5, y: -102}
+        - {x: -86.5, y: -99}
+        - {x: -37.5, y: -108}
+        - {x: 33.5, y: -108}
+        - {x: 147.5, y: -79}
+        - {x: 147.5, y: -43}
+        - {x: 143.5, y: -18}
     outline: []
   spritePackingTag: 
   userData: 
