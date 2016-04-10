@@ -26,7 +26,7 @@ public class HookControl : MonoBehaviour {
                 StartCoroutine(HappyGrabbingConversation(randomNumber));               
             }
 
-            if (this.gameObject.transform.root.gameObject.tag == "PlayerArrows")
+            if (this.gameObject.transform.root.gameObject.name == "PlayerArrows")
             {
                 int randomNumber = Random.Range(0, 2);
                 StartCoroutine(AngryGrabbingConversation(randomNumber));
@@ -36,7 +36,6 @@ public class HookControl : MonoBehaviour {
 
     IEnumerator HappyGrabbingConversation(int RN)
     {
-        Debug.Log("Play sound");
         if (RN == 0) SoundFiles.PlayH_Talk_1();
         if (RN == 1) SoundFiles.PlayH_Talk_2();
         if (RN == 2) SoundFiles.PlayH_Talk_3();
