@@ -455,7 +455,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5057848, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
       propertyPath: m_Mass
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5057848, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
       propertyPath: m_LinearDrag
@@ -464,6 +464,22 @@ Prefab:
     - target: {fileID: 5057848, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
       propertyPath: m_AngularDrag
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 139786, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 412546, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5057848, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
@@ -4522,7 +4538,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 476104, guid: d0751a0abddc5434ba82a423b30f08b3, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6032588, guid: d0751a0abddc5434ba82a423b30f08b3, type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].x
@@ -5969,6 +5985,26 @@ Prefab:
       propertyPath: Target
       value: 
       objectReference: {fileID: 2087706404}
+    - target: {fileID: 11431248, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
+      propertyPath: Radius
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11431248, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
+      propertyPath: GravityCurve.m_Curve.Array.data[2].value
+      value: 0.019371364
+      objectReference: {fileID: 0}
+    - target: {fileID: 11431248, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
+      propertyPath: GravityCurve.m_Curve.Array.data[2].time
+      value: 1.002988
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487582, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
+      propertyPath: Radius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11487582, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
+      propertyPath: MaximalPull
+      value: -3200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
   m_IsPrefabParent: 0
@@ -23309,7 +23345,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 471344, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11454514, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
       propertyPath: Target
@@ -23319,6 +23355,28 @@ Prefab:
       propertyPath: Target
       value: 
       objectReference: {fileID: 86904470}
-    m_RemovedComponents: []
+    - target: {fileID: 11454514, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
+      propertyPath: Radius
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454514, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
+      propertyPath: GravityCurve.m_Curve.Array.data[2].value
+      value: 0.0066642705
+      objectReference: {fileID: 0}
+    - target: {fileID: 11454514, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498702, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
+      propertyPath: Radius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498702, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
+      propertyPath: MaximalPull
+      value: -3200
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11422138, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
+    - {fileID: 11402756, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
   m_IsPrefabParent: 0
