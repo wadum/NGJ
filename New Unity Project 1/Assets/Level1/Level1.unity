@@ -5977,34 +5977,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 11431248, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
-      propertyPath: Target
-      value: 
-      objectReference: {fileID: 1381958318}
     - target: {fileID: 11487582, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
       propertyPath: Target
       value: 
       objectReference: {fileID: 2087706404}
     - target: {fileID: 11431248, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
-      propertyPath: Radius
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 11431248, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
-      propertyPath: GravityCurve.m_Curve.Array.data[2].value
-      value: 0.019371364
-      objectReference: {fileID: 0}
-    - target: {fileID: 11431248, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
-      propertyPath: GravityCurve.m_Curve.Array.data[2].time
-      value: 1.002988
-      objectReference: {fileID: 0}
-    - target: {fileID: 11487582, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
-      propertyPath: Radius
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11487582, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
-      propertyPath: MaximalPull
-      value: -3200
-      objectReference: {fileID: 0}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 1381958318}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
   m_IsPrefabParent: 0
