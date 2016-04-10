@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SoundFilesController : MonoBehaviour {
 
-    public AudioSource Exsplosion, Exsplosion2, Music_Layer, Music_MainFast, Music_MainFastLayer, Music_MainTheme;
+    public AudioSource Exsplosion, Exsplosion2, Music_Layer, Music_MainFast, Music_MainFastLayer, Music_MainTheme, Magnet_Happy, Magnet_Angry;
     // Use this for initialization
 
     private AudioSource[] allAudioSources;
@@ -29,6 +29,7 @@ public class SoundFilesController : MonoBehaviour {
     BASIC FUNCTIONS
     
     BLUEPRINT
+    
     public void PlayNAME()
     {
         NAME.Play();
@@ -40,6 +41,24 @@ public class SoundFilesController : MonoBehaviour {
     }
     */
 
+    public void PlayMagnet_Angry()
+    {
+        Magnet_Angry.Play();
+    }
+
+    public void StopMagnet_Angry()
+    {
+        Magnet_Angry.Stop();
+    }
+    public void PlayMagnet_Happy()
+    {
+        Magnet_Happy.Play();
+    }
+
+    public void StopMagnet_Happy()
+    {
+        Magnet_Happy.Stop();
+    }
 
     public void PlayExsplosion()
     {
