@@ -16,7 +16,6 @@ public class WallColliderController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		Debug.Log("Hit!");
 		if(other.tag == "Player" && !_isTriggered)
 		{
 			other.GetComponent<ReactionSoundsController>().PlayWallHitSound();
@@ -59,7 +58,7 @@ public class WallColliderController : MonoBehaviour {
 
     IEnumerator DieAndResetLevel()
     {
-        DeathAnimation.SetBool("Death", true);
+        //DeathAnimation.SetBool("Death", true);
         Application.LoadLevel(Application.loadedLevel);
         yield return null;
     }
