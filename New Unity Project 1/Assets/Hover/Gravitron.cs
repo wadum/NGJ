@@ -8,6 +8,9 @@ public class Gravitron : MonoBehaviour {
     public Rigidbody2D Target;
     public SpriteRenderer Effect;
 
+	public AudioSource MagnetSound;
+
+    /*
     private void Update() {
         if (!Effect)
             return;
@@ -33,17 +36,29 @@ public class Gravitron : MonoBehaviour {
         color.a = alpha;
         Effect.color = color;
     }
+    */
 
-    private float Ratio() {
-        var dist = Vector2.Distance(Target.position, transform.position);
+    private float Ratio(float dist) {
         var ratio = Mathf.Clamp01(1 - dist/Radius);
         return ratio;
     }
 
     private void FixedUpdate() {
-        var force = GravityCurve.Evaluate(Ratio())*MaximalPull*Time.fixedDeltaTime;
-        var dir = (Vector2)transform.position - Target.position;
+        var dist = Vector2.Distance(Target.worldCenterOfMass, transform.position);
+		if (dist > Radius)
+		{
+			if(MagnetSound && MagnetSound.isPlaying) MagnetSound.Stop();
+            return;
+		}
 
-        Target.AddForce(force * dir, ForceMode2D.Force);
+		if(MagnetSound){
+			if(!MagnetSound.isPlaying) MagnetSound.Play();
+			MagnetSound.volume = Ratio(dist);
+		}
+
+        var force = GravityCurve.Evaluate(Ratio(dist))*MaximalPull*Time.fixedDeltaTime;
+        var dir = (Vector2)transform.position - Target.worldCenterOfMass;
+
+        Target.AddForceAtPosition(force * dir, Target.worldCenterOfMass, ForceMode2D.Force);
     }
 }

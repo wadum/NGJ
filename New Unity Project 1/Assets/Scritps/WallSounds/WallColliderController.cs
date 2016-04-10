@@ -1,20 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(AudioSource))]
 public class WallColliderController : MonoBehaviour {
-
-	public AudioClip[] Sounds;
-	public AudioClip[] Voices;
 
     public SoundFilesController SoundFiles;
 
-	public AudioSource SoundSource;
-	public AudioSource VoiceSource;
-
     public Animator DeathAnimation;
-
-	public int ChanceToPlayVoice = 25;
 
 	private bool _isTriggered = false; 
 
@@ -26,15 +17,10 @@ public class WallColliderController : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		Debug.Log("Hit!");
-		if(other.tag == "Player" && !SoundSource.isPlaying && !_isTriggered)
+		if(other.tag == "Player" && !_isTriggered)
 		{
-			SoundSource.clip = Sounds[Random.Range(0,Sounds.Length-1)];
-			SoundSource.Play();
-			if(Random.Range(0,100) > ChanceToPlayVoice)
-			{
-				VoiceSource.clip = Voices[Random.Range(0,Voices.Length-1)];
-				VoiceSource.PlayDelayed(1);
-			}
+			other.GetComponent<ReactionSoundsController>().PlayWallHitSound();
+			other.GetComponent<ReactionSoundsController>().PlayTalkingSound();
 			_isTriggered = true;
 		}
 

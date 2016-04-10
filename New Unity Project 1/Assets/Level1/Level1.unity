@@ -455,7 +455,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5057848, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
       propertyPath: m_Mass
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5057848, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
       propertyPath: m_LinearDrag
@@ -464,6 +464,22 @@ Prefab:
     - target: {fileID: 5057848, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
       propertyPath: m_AngularDrag
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 139786, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 479226, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 412546, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5057848, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 55c2130f9d0d0c54fa6dec2cac57ac7d, type: 2}
@@ -4522,7 +4538,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 476104, guid: d0751a0abddc5434ba82a423b30f08b3, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6032588, guid: d0751a0abddc5434ba82a423b30f08b3, type: 2}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[10].x
@@ -4764,7 +4780,9 @@ Prefab:
       propertyPath: DeathAnimation
       value: 
       objectReference: {fileID: 1207072602}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8282752, guid: d0751a0abddc5434ba82a423b30f08b3, type: 2}
+    - {fileID: 8218164, guid: d0751a0abddc5434ba82a423b30f08b3, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d0751a0abddc5434ba82a423b30f08b3, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &273976694
@@ -5961,14 +5979,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 11431248, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
-      propertyPath: Target
-      value: 
-      objectReference: {fileID: 1381958318}
     - target: {fileID: 11487582, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
       propertyPath: Target
       value: 
       objectReference: {fileID: 2087706404}
+    - target: {fileID: 11431248, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 1381958318}
+    - target: {fileID: 11431248, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
+      propertyPath: MagnetSound
+      value: 
+      objectReference: {fileID: 1709830772}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9926bff67e76e3b4abefede4f9fc05b8, type: 2}
   m_IsPrefabParent: 0
@@ -6517,6 +6539,32 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8291998, guid: 09b0601bf762b45d1a3e3cdda4807dc7, type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24360824, guid: 01c1c7a99ceb1374e919828c9706b8e1,
+        type: 2}
+    - target: {fileID: 8291998, guid: 09b0601bf762b45d1a3e3cdda4807dc7, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291998, guid: 09b0601bf762b45d1a3e3cdda4807dc7, type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200778, guid: 09b0601bf762b45d1a3e3cdda4807dc7, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200778, guid: 09b0601bf762b45d1a3e3cdda4807dc7, type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200778, guid: 09b0601bf762b45d1a3e3cdda4807dc7, type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24360824, guid: 01c1c7a99ceb1374e919828c9706b8e1,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09b0601bf762b45d1a3e3cdda4807dc7, type: 2}
   m_IsPrefabParent: 0
@@ -10486,6 +10534,11 @@ SpriteRenderer:
   m_Color: {r: 0.8281948, g: 1, b: 0.43382353, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!82 &749423174 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 8200778, guid: 09b0601bf762b45d1a3e3cdda4807dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 534577746}
 --- !u!1 &779059515
 GameObject:
   m_ObjectHideFlags: 0
@@ -20452,6 +20505,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1675229821}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &1709830772 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 8291998, guid: 09b0601bf762b45d1a3e3cdda4807dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 534577746}
 --- !u!1 &1729386371
 GameObject:
   m_ObjectHideFlags: 0
@@ -23309,16 +23367,20 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 471344, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 11454514, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
-      propertyPath: Target
-      value: 
-      objectReference: {fileID: 1381958318}
     - target: {fileID: 11498702, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
       propertyPath: Target
       value: 
       objectReference: {fileID: 86904470}
+    - target: {fileID: 11454514, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 1381958318}
+    - target: {fileID: 11454514, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
+      propertyPath: MagnetSound
+      value: 
+      objectReference: {fileID: 749423174}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd49b78456b206a4ca54a97ad39fdf84, type: 2}
   m_IsPrefabParent: 0
