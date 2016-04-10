@@ -19,7 +19,6 @@ public class HookControl : MonoBehaviour {
         {
             other.GetComponent<HingeJoint2D>().connectedBody = this.transform.parent.gameObject.GetComponent<Rigidbody2D>();
             other.GetComponent<HingeJoint2D>().enabled = true;
-            Debug.Log(this.gameObject.transform.root.gameObject.name);
             if (this.gameObject.transform.root.gameObject.name == "PlayerAWD")
             {
                 int randomNumber = Random.Range(0, 2);

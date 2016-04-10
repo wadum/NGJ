@@ -16,7 +16,6 @@ public class WallColliderController : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		Debug.Log("Hit!");
 		if(other.tag == "Player" && !_isTriggered)
 		{
 			other.GetComponent<ReactionSoundsController>().PlayWallHitSound();
