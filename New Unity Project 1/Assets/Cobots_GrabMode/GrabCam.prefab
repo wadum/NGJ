@@ -77,6 +77,8 @@ GameObject:
   - 124: {fileID: 12468366}
   - 81: {fileID: 8159896}
   - 114: {fileID: 11441978}
+  - 95: {fileID: 9541022}
+  - 114: {fileID: 11410638}
   m_Layer: 0
   m_Name: GrabCam
   m_TagString: MainCamera
@@ -1555,6 +1557,35 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 163634}
   m_Enabled: 1
+--- !u!95 &9541022
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163634}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4150aa335bb1a404a9d7f3a57652b436, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11410638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 163634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a34177fe37cd402a8a2545643c5e2cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 0}
 --- !u!114 &11441978
 MonoBehaviour:
   m_ObjectHideFlags: 1
