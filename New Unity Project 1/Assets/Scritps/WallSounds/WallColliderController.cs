@@ -12,6 +12,8 @@ public class WallColliderController : MonoBehaviour {
 	public AudioSource SoundSource;
 	public AudioSource VoiceSource;
 
+    public Animator DeathAnimation;
+
 	public int ChanceToPlayVoice = 25;
 
 	private bool _isTriggered = false; 
@@ -57,6 +59,7 @@ public class WallColliderController : MonoBehaviour {
                 other.gameObject.transform.parent.gameObject.SetActive(false);
                 SoundFiles.StopAllAudio();
                 SoundFiles.PlayExsplosion2();
+                StartCoroutine(DieAndResetLevel());
             }
             StartCoroutine(WaitForReactorToBeAbleToHitAgain());
         }
@@ -70,7 +73,8 @@ public class WallColliderController : MonoBehaviour {
 
     IEnumerator DieAndResetLevel()
     {
-
+        DeathAnimation.SetBool("Death", true);
+        Application.LoadLevel(Application.loadedLevel);
         yield return null;
     }
 }
